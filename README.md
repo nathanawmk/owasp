@@ -3,11 +3,11 @@ OWASP: How Secure are you APIs? Securing your APIs: OWASP API Top 10 2019, Case 
 
 1. Backend
 
-cd C:\Spring\cors\gs-rest-service-cors\complete\target 
+cd C:\Spring\cors\gs-rest-service-cors\complete 
 
 mvn clean install -DskipTests
 
-cd C:\Spring\cors\gs-rest-service-cors\complete\target>
+cd C:\Spring\cors\gs-rest-service-cors\complete\target
 
 java -jar rest-service-cors-0.0.1-SNAPSHOT.jar
 
