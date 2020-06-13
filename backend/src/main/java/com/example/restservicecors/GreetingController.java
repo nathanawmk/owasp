@@ -14,25 +14,25 @@ public class GreetingController {
 	private final AtomicLong counter = new AtomicLong();
 
 	@CrossOrigin(origins = "http://localhost:3000")
-	@GetMapping("/accountdetails")
+	@GetMapping("/accountbalance")
 	public Greeting greeting(@RequestParam("id") long id) {
 		System.out.println("==== Bank Account ID ====" + id);
 		if (id == 123456789)
 		{
-				return new Greeting(String.format(template, 500));
+				return new Greeting(String.format(template, 100));
 		}
 		else if (id == 789456123)
 		{
 			
-				return new Greeting(String.format(template, 20000));
+				return new Greeting(String.format(template, 200));
 		}	
 		else if (id == 111111111)
 		{
-			return new Greeting(String.format(template, 100));
+			return new Greeting(String.format(template, 8000));
 		}
 		else if (id == 222222222)
 		{
-			return new Greeting(String.format(template, 500 ));
+			return new Greeting(String.format(template, 10000 ));
 		}
 	return new Greeting(String.format(template, 0));
 	}
